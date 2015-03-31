@@ -1,0 +1,63 @@
+{
+    "main": "index.js",
+    "name": "scipm.startup_info",
+    "version": "0.1.0",
+    "description": "show (again) scipm startup info",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aminassian/scipm.startup_info.git"
+    },
+    "bugs": {
+        "type": "git",
+        "url": "git://github.com/aminassian/scipm.startup_info/issues"
+    },
+    "keywords": [
+        "scipm-package"
+    ],
+    "dependencies": {
+    },
+    "scipmchild": {
+        "version": "1",
+        "scipmDependencies": {},
+        "luaRequire": [],
+        "SciTEStartup": {
+            "_use": "no",
+            "raw": null,
+            "filePath": null,
+            "dofile": [],
+            "luaReportExtend": "scipm.core.printInfoPackage(\"scipm.startup_info\");",
+            "infoLuaFunctions": [],
+            "infoFiles": [
+                {"path": ["README.md"]},
+                {"path": ["package.json"]}
+            ],
+            "infoProps": [
+            ]
+        },
+        "actions": {
+            "startup_info": {
+                "title": "Scipm startup info",
+                "description": "show (again) scipm startup info",
+                "pattern": [
+                    "*"
+                ],
+                "addToolsMenu": {
+                    "allow": true,
+                    "addContextMenu": false,
+                    "command": {
+                        "shortcuts": null,
+                        "subsystem": "luadirector",
+                        "cmd": "dostring scipm.core.startupInfo()",
+                        "isFilter": null,
+                        "saveBefore": "2",
+                        "input": null,
+                        "replaceSelection": null,
+                        "quiet": null,
+                        "mode": null
+                    }
+                }
+            }
+        }
+    }
+}
