@@ -1,7 +1,7 @@
 {
     "main": "index.js",
     "name": "scipm.startup_info",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "show (again) scipm startup info",
     "license": "GPL-3.0",
     "repository": {
